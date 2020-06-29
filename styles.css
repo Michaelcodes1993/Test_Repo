@@ -1,6 +1,11 @@
-
+*{
+    margin: auto;
+    padding: 0;
+    max-width: 100%;
+}
 main {
  margin-top: 60px;
+ max-width: 80%;
 }
 
 main h1 {
@@ -26,4 +31,31 @@ main h3 {
 main p {
  font-family: 'Roboto', sans-serif;
  margin-top: 0;
+}
+
+.group1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.item1 p {
+    text-align: left;
+    padding-bottom: 16px;
+}
+
+.item1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: solid red;
+}
+
+.item-double {
+    flex: 2;
+}
+
+img {
+    object-fit: contain;
 }
